@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        div {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=text], 
+        input[type=email], 
+        input[type=password], 
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Styled Registration Form</h3>
+
+<div>
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="cnic">CNIC</label>
+        <input type="text" id="cnic" name="cnic" placeholder="Your CNIC.." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Your password.." required>
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="">Select a department</option>
+            <option value="CS&IT">CS&IT</option>
+            <option value="Physics">Physics</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+ 
+    </form>
+</div>
+
+</body>
+</html>
